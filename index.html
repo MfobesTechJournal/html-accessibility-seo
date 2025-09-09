@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mfobe Ntintelo - Accessible & SEO-Friendly HTML5 Page</title>
+  <meta name="description" content="A simple HTML5 page demonstrating semantic structure, accessibility landmarks, and basic on-page SEO.">
+  <meta name="author" content="Mfobe Ntintelo">
+</head>
+<body>
+  <!-- Skip link helps keyboard/screen-reader users jump to main content -->
+  <a href="#main" aria-label="Skip to main content">Skip to main content</a>
+
+  <header>
+    <h1>My Accessible, SEO-Friendly Demo</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#about">About this Page</a></li>
+        <li><a href="#articles">Articles</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About this Page</h2>
+      <p>This page uses semantic HTML5 elements—<code>header</code>, <code>nav</code>, <code>main</code>, <code>section</code>, <code>article</code>, and <code>footer</code>—to improve accessibility and help search engines understand the structure.</p>
+
+     
+    </section>
+
+    <section id="articles" aria-labelledby="articles-heading">
+      <h2 id="articles-heading">Articles</h2>
+
+      <article aria-labelledby="a11y-why">
+        <h3 id="a11y-why">Why Accessibility Matters</h3>
+        <p>Clear headings, proper landmarks, labels, and descriptive links help screen reader and keyboard users navigate effectively.</p>
+        <p><a href="#contact">Contact me</a> if you want to learn more.</p>
+      </article>
+
+      <article aria-labelledby="seo-basics">
+        <h3 id="seo-basics">SEO Basics for Beginners</h3>
+        <p>Use one <strong>H1</strong> per page, logical <strong>H2/H3</strong> hierarchy, and a concise <strong>meta description</strong>. Write human-readable content with descriptive link text.</p>
+      </article>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <!-- Labels explicitly tied to inputs for accessibility -->
+      <form aria-describedby="contact-help">
+        <p id="contact-help">All fields are optional in this demo.</p>
+
+        <label for="name">Name</label><br>
+        <input id="name" name="name" type="text" autocomplete="name"><br><br>
+
+        <label for="email">Email</label><br>
+        <input id="email" name="email" type="email" autocomplete="email"><br><br>
+
+        <label for="message">Message</label><br>
+        <textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mfobe Ntintelo. All rights reserved.</p>
+    <address>
+      Contact: <a href="mailto:relentintelo&#64;gmail&#46;com" title="Send me an email">Email Me</a>
+    </address>
+  </footer>
+</body>
+</html>
